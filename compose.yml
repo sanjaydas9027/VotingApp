@@ -15,7 +15,7 @@ services:
     depends_on:
       - db
     ports:
-      - "5001:80"
+      - "5001:4000"
     networks:
       - front-tier
       - back-tier
