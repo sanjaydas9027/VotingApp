@@ -11,7 +11,7 @@ services:
       - back-tier
 
   result:
-    image: sanjaydas9027/result:1
+    image: sanjaydas9027/result
     depends_on:
       - db
     ports:
