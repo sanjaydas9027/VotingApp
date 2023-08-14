@@ -1,7 +1,7 @@
 version: '3'
 services:
   vote:
-    image: sanjaydas9027/vote
+    image: sanjaydas9027/vote:1
     depends_on:
       - redis
     ports:
@@ -11,7 +11,7 @@ services:
       - back-tier
 
   result:
-    image: sanjaydas9027/result
+    image: sanjaydas9027/result:1
     depends_on:
       - db
     ports:
@@ -21,7 +21,7 @@ services:
       - back-tier
 
   worker:
-    image: sanjaydas9027/worker
+    image: sanjaydas9027/worker:1
     depends_on:
       - redis
       - db
